@@ -3,7 +3,6 @@ import cv2
 import face_recognition
 
 # Get a reference to webcam 
-video_capture = cv2.VideoCapture(0)
 
 # Initialize variables
 face_locations = []
