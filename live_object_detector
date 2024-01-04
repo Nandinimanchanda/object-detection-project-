@@ -1,1 +1,13 @@
-duckfkfchdyxuoxoud
+import cv2
+import time
+import imutils
+cam = cv2.VideoCapture(0)
+time.sleep(1)
+while True:
+  _,img=cam.read()
+  text="Normal"
+  img= imutils.resize(img,width 500)
+  if FirstFrame is None:
+     FirstFrame= img
+     continue
+
