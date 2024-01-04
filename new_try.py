@@ -6,7 +6,7 @@ min_confidence=0.2
 
 classes = ["person",
 "bicycle","car","motorbike","aeroplane","bus","train","truck","boat","traffic light","fire","hydrant","stop sign","parking meter","bench","bird","cat","dog","horse","sheep","cow","elephant","bear","zebra","giraffe","backpack","umbrella","handbag","tie","suitcase","frisbee","skis","snowboard","sports ball","kite","baseball bat","baseball glove","skateboard","surfboard","tennis racket","bottle","wine glass","cup","fork","knife","spoon","bowl","banana","apple","sandwich","orange","broccoli","carrot",
-"hot dog","pizza","donut","cake","chair","sofa","pottedplant","bed","dining table","toilet","tvmonitor","laptop","mouse","remote","keyboard","cell phone","microwave","oven","toaster","sink","refrigerator","book","clock","vase",'scissors","teddy bear","hair drier","toothbrush"]
+"hot dog","pizza","donut","cake","chair","sofa","pottedplant","bed","dining table","toilet","tvmonitor","laptop","mouse","remote","keyboard","cell phone","microwave","oven","toaster","sink","refrigerator","book","clock","vase","scissors","teddy bear","hair drier","toothbrush"]
 
 np.random.seed(54321)
 colors=np.random.uniform(0,255, size=(len(classes),3))
@@ -36,9 +36,9 @@ for i in range(detected_objects.shape[2])
         cv2.rectangle(image,(upper_left_x,upper_left_y),(lower_left_x,lower_left_y),colors[class_index],3]
         cv2.putText(image, prediction_text,(uper_left_x,uper_left_y-15 ifupper_left_y>30 else upper_left_y+15),cv2.FONT_HERSHEY_SIMPLEX,0.6, colors[class_index],2)
 
-   cv2.imshow("Detected Objects", image)
-   cv2.waitKey(0)
-   cv2.destroyAllWindows()
+    cv2.imshow("Detected Objects", image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
 
 
