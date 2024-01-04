@@ -77,7 +77,8 @@ def main():
         cv2.imshow('Real-Time Object Detection', frame)
 
         # Exit if the user presses 'q'
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        cv2.waitKey(1)
+        if 0xFF == ord('q'):
             break
 
     # Release resources
